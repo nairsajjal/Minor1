@@ -118,10 +118,11 @@ void predict_demand()
 {
    
     test_demand = a1*test_price + a0;
-   
+   if(test_demand>=0){
      printf("The demand for the corresponding price is: %3.3f people. \n\n\n\n", test_demand);
-
-   
+	
+   }else
+    printf("Due to the exuberant prices there wont be any Demand Generated in people. \n\n\n");
 }
 
 // The generating "main" function
